@@ -56,7 +56,7 @@ document.querySelector("#submit-all").addEventListener("click", (e)=>{
       method: "POST",
       body: submitedFormData,
     }).then(res => res.json())
-      .then(el => alert("Sent! Thanks")
+      .then(el => console.log(el))
 });
 
 window.addEventListener('load', ()=>{
