@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: calc(var(---vh, 1vh)*100);
+    width: 100%;
+    font-size: 16px;
+}
+
+h1{
+    font-family: "Dela Gothic One",sans-serif;
+}
+
+main{
+    width: 100%;
+    min-height: calc(var(---vh, 1vh)*100);
+    background: #f1f1f1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.header-tag{
+    position: absolute;
+    display: inline;
+    padding: 5px 20px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 15%);
+    top: 50%;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-tag h1{
+    font-size: 18px;
+}
+
+#survey{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.survey-head{
+    margin-bottom: 20px;
+}
+
+.survey-head h1{
+    font-size: clamp(25px, 3.33vw, 768px);
+    text-transform: uppercase;
+}
+
+.survey-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.survey-side{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.survey-comment{
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 15%);
+    border-radius: 20px;
+    position: relative;
+}
+
+.survey-comment textarea{
+    box-sizing: border-box;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 15%);
+    border-radius: 20px;
+}
+
+.survey-comment textarea::-webkit-scrollbar{
+    background: transparent;
+}
+
+.survey-comment textarea::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #5d5d5d;
+}
+
+.survey-comment button{
+    position: absolute;
+    background: #ff4500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    bottom: 0;
+    transform: translateX(-20px);
+}
+
+.survey-comment .heading{
+    margin-bottom: 20px;
+}
+
+.survey-comment .heading h1{
+    text-transform: uppercase;
+}
+
+.survey-emojis{
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.survey-emojis .wrapper{
+    display: flex;
+}
+
+.emoji input{
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: border .2s ease;
+    filter: grayscale(100%);
+    margin: 0 5px;
+    transition: all .2s ease;
+}
+
+.emoji input:hover, 
+.emoji input:checked {
+    filter:	grayscale(0);
+}
+
+.emoji input:focus {
+    outline: 0;
+}
+
+.happy {
+    background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+    background-size: cover;
+}
+
+.neutral {
+    background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
+    background-size: cover;
+}
+
+.sad {
+    background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+    background-size: cover;
+}
+
+.survey-side{
+    padding: 20px;
+}
+
+.dropdown{
+    width: 90%;
+}
+
+.dropdown input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    background: transparent;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 15%);
+    margin-bottom: 20px;
+}
+
+#myUL{
+    list-style: none;
+}
+
+#myUL li{
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+}
+
+#myUL li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+#myUL a.live{
+    color: #ff4500;
+}
+
+@media (max-width: 768px) {
+    .survey-bottom{
+        flex-direction: column;
+    }
+    .dropdown{
+        width: 100%;
+    }
+}
