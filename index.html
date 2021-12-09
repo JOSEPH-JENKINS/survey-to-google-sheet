@@ -26,21 +26,35 @@
             <div class="survey-emojis">
                 <div class="wrapper">
                     <div class="emoji">
-                        <input type="radio" name="radio" value="happy" id="happy" class="happy">
-                    </div>
-                    <div class="emoji">
                         <input type="radio" name="radio" value="sad" id="sad" class="sad">
                     </div>
                     <div class="emoji">
                         <input type="radio" name="radio" value="neutral" id="neutral" class="neutral">
+                    </div>
+                    <div class="emoji">
+                        <input type="radio" name="radio" value="happy" id="happy" class="happy">
                     </div>
                 </div>
             </div>
             <div class="survey-bottom">
                 <div class="survey-side">
                     <div class="dropdown">
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-                        <ul id="myUL">
+                        <h1>Start:</h1>
+                        <input type="text" id="myInput" class="one" onkeyup="myFunctionOne()" placeholder="Search for names..">
+                        <ul id="myUL" class="out-one">
+                            <li><a href="#">Adele</a></li>
+                            <li><a href="#">Agnes</a></li>
+                            <li><a href="#">Billy</a></li>
+                            <li><a href="#">Bob</a></li>
+                            <li><a href="#">Calvin</a></li>
+                            <li><a href="#">Christina</a></li>
+                            <li><a href="#">Cindy</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <h1>End:</h1>
+                        <input type="text" id="myInput" class="two" onkeyup="myFunctionTwo()" placeholder="Search for names..">
+                        <ul id="myUL" class="out-two">
                             <li><a href="#">Adele</a></li>
                             <li><a href="#">Agnes</a></li>
                             <li><a href="#">Billy</a></li>

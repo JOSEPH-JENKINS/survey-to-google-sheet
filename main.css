@@ -72,6 +72,7 @@ header{
 
 .survey-side{
     flex: 1;
+    display: flex;
     margin-right: 20px;
 }
 
@@ -86,6 +87,7 @@ header{
 .survey-comment textarea{
     box-sizing: border-box;
     width: 100%;
+    height: 80%;
     background: transparent;
     border: none;
     outline: none;
@@ -109,10 +111,10 @@ header{
     position: absolute;
     background: #ff4500;
     border: none;
-    padding: 10px 20px;
+    padding: 20px;
     border-radius: 50px;
     bottom: 0;
-    transform: translateX(-20px);
+    transform: translateX(-30px);
 }
 
 .survey-comment .heading{
@@ -180,6 +182,15 @@ header{
     width: 90%;
 }
 
+.dropdown:first-child{
+    margin-right: 30px;
+}
+
+.dropdown h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 .dropdown input{
     width: 100%;
     padding: 10px;
@@ -200,6 +211,7 @@ header{
     width: 100%;
     border-bottom: 1px solid #333;
     padding: 5px;
+    display: none;
 }
 
 #myUL li a{
@@ -214,6 +226,9 @@ header{
 
 @media (max-width: 768px) {
     .survey-bottom{
+        flex-direction: column;
+    }
+    .survey-side{
         flex-direction: column;
     }
     .dropdown{
