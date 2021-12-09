@@ -108,13 +108,12 @@ header{
 }
 
 .survey-comment button{
-    position: absolute;
     background: #ff4500;
     border: none;
-    padding: 20px;
+    padding: 10px;
     border-radius: 50px;
     bottom: 0;
-    transform: translateX(-30px);
+    width: 100%;
 }
 
 .survey-comment .heading{
